@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/metal"
+    tools:context="com.example.sportsscorecounter.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Soccer"
+        android:textSize="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:id="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/korea"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/korea"/>
+
+    <ImageView
+        android:id="@+id/hongkong"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hongkong"
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/koreatext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Korea"
+        android:textSize="30dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/hongkongtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hong kong"
+        android:textSize="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignTop="@+id/koreatext"
+        android:layout_alignEnd="@+id/hongkong"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score"
+        android:textSize="40dp"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/korea"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/koreaScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="80dp"
+        android:layout_alignTop="@+id/hongScore"
+        android:layout_alignEnd="@+id/koreatext"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/hongScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="80dp"
+        android:layout_marginStart="26dp"
+        android:layout_below="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="80dp"
+        android:layout_alignTop="@+id/koreaScore"
+        android:layout_toStartOf="@+id/hongkong"
+        android:textColor="#000000"
+        android:id="@+id/textView" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+"
+        android:textSize="30dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/koreaPlus"
+        android:layout_alignTop="@+id/koreaScore"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="-"
+        android:textSize="30dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/koreaMinus"
+        android:layout_marginTop="450dp"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+"
+        android:textSize="30dp"
+        android:id="@+id/hongkongPlus"
+        android:layout_alignTop="@+id/hongScore"
+        android:layout_toEndOf="@+id/hongScore" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="-"
+        android:textSize="30dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="315dp"
+        android:id="@+id/hongkongMinus"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:textSize="40dp"
+        android:id="@+id/sendScore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"/>
+
+
+</RelativeLayout>
